@@ -13,7 +13,7 @@ module.exports = {
             },
             isInvited: {
                 type: Sequelize.BOOLEAN,
-                defaultValue: 1
+                defaultValue: 0
             },
             createdAt: {
                 allowNull: false,

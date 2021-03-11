@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     };
     User.init({
         name: DataTypes.STRING,
-        isInvited: DataTypes.BOOLEAN
+        isInvited: DataTypes.BOOLEAN,
     }, {
         sequelize,
         modelName: 'User',
