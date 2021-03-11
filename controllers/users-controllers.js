@@ -2,7 +2,7 @@ const {asyncHandler} = require('../utils/asynvHandler');
 const User = require('../models').User;
 
 exports.getUsers = asyncHandler(async (req, res, next) => {
-    let users = await User.findAll({});
+    let users = await User.findAll();
     if (req.query.name) {
         users = users.filter(user => user.name === req.query.name)
         return res.status(200).json({users})
